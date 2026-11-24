@@ -169,12 +169,12 @@ export function renderEditionHtml(edition: EditionData, assetsDir: string): stri
   .date-badge {
     background: #B91C1C;
     color: #FFFFFF;
-    font-size: 16.5px;
+    font-size: 17.5px;
     font-weight: 800;
-    letter-spacing: 0.7px;
-    padding: 6px 14px;
+    letter-spacing: 0.75px;
+    padding: 6px 15px;
     border-radius: 2px;
-    box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.18);
+    box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.22);
   }
   .mast-sub {
     height: 20px;
@@ -244,16 +244,16 @@ export function renderEditionHtml(edition: EditionData, assetsDir: string): stri
   }
   .hero-headline {
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 20.5px;
+    font-size: 21.2px;
     font-weight: 800;
-    line-height: 1.12;
-    color: #0F172A;
-    letter-spacing: -0.3px;
+    line-height: 1.11;
+    color: #0B1320;
+    letter-spacing: -0.35px;
   }
   .hero-summary {
-    font-size: 10.5px;
-    line-height: 1.25;
-    color: #334155;
+    font-size: 10.6px;
+    line-height: 1.24;
+    color: #1E293B;
     margin-top: 3px;
   }
   .hero-metrics {
@@ -435,16 +435,16 @@ export function renderEditionHtml(edition: EditionData, assetsDir: string): stri
   }
   .spot-title {
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 12.8px;
+    font-size: 13.4px;
     font-weight: 800;
-    line-height: 1.14;
-    color: #0F172A;
+    line-height: 1.13;
+    color: #0B1320;
     margin-bottom: 3px;
   }
   .spot-summary {
-    font-size: 9.4px;
-    line-height: 1.21;
-    color: #334155;
+    font-size: 9.5px;
+    line-height: 1.2;
+    color: #1E293B;
   }
 
   /* LOWER 6-CONTINENT GRID (404px) */
@@ -462,19 +462,19 @@ export function renderEditionHtml(edition: EditionData, assetsDir: string): stri
     border-top: 3px solid #1E3A5F;
     display: flex;
     flex-direction: column;
-    padding: 5px 8px 5px;
+    padding: 4px 8px 4px;
     overflow: hidden;
   }
   .continent-head {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 4px;
-    margin-bottom: 4px;
+    padding-bottom: 3px;
+    margin-bottom: 3px;
     border-bottom: 1px solid #E5DEC9;
   }
   .continent-title {
-    font-size: 11.2px;
+    font-size: 11.4px;
     font-weight: 900;
     letter-spacing: 0.65px;
     text-transform: uppercase;
@@ -497,9 +497,9 @@ export function renderEditionHtml(edition: EditionData, assetsDir: string): stri
   }
   .brief-item {
     font-size: 9.7px;
-    line-height: 1.24;
+    line-height: 1.22;
     color: #1F2937;
-    padding-bottom: 3px;
+    padding-bottom: 2px;
     border-bottom: 1px dotted #E2D9C8;
   }
   .brief-item:last-child {
@@ -582,19 +582,19 @@ export function renderEditionHtml(edition: EditionData, assetsDir: string): stri
         <div class="map-canvas">${worldMapSvg}</div>
         <div class="map-kpis">
           <div class="kpi-cell">
-            <span class="kpi-kicker" style="color:#4338CA">Space Milestone</span>
-            <span class="kpi-val">Shenzhou-24</span>
-            <span class="kpi-sub">1st foreign Tiangong crew</span>
+            <span class="kpi-kicker" style="color:#0F766E">Energy · Gulf &amp; Libya</span>
+            <span class="kpi-val">Brent ~$90 (-3%)</span>
+            <span class="kpi-sub">Sharara reopens; Hormuz risk</span>
           </div>
           <div class="kpi-cell">
-            <span class="kpi-kicker" style="color:#B45309">Climate Talks</span>
-            <span class="kpi-val">COP31 Collapses</span>
-            <span class="kpi-sub">No Antalya accord</span>
+            <span class="kpi-kicker" style="color:#B91C1C">Med · Ukraine Strike</span>
+            <span class="kpi-val">Corvette Sunk</span>
+            <span class="kpi-sub">Merkury hit in Benghazi</span>
           </div>
           <div class="kpi-cell">
-            <span class="kpi-kicker" style="color:#7E22CE">World Chess</span>
-            <span class="kpi-val">Gukesh vs Sindarov</span>
-            <span class="kpi-sub">Youngest match opens</span>
+            <span class="kpi-kicker" style="color:#B45309">AI &amp; Climate · U.S.</span>
+            <span class="kpi-val">400 Data Centers</span>
+            <span class="kpi-sub">Out-emit all of Denmark</span>
           </div>
         </div>
       </aside>

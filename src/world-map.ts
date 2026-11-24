@@ -152,18 +152,18 @@ export function renderWorldMapSvg(markers: readonly MapMarker[]): string {
   const graticule = [
     ...latLines.map((lat) => {
       const y = project(0, lat).y;
-      const dash = lat === 0 ? 'stroke-dasharray="3,2" stroke="#9BB0C4"' : 'stroke="#C7D5E2"';
+      const dash = lat === 0 ? 'stroke-dasharray="3,2" stroke="#85A1BA"' : 'stroke="#A6BED4"';
       return `<line x1="0" y1="${y}" x2="${MAP_WIDTH}" y2="${y}" ${dash} stroke-width="0.65"/>`;
     }),
     ...lonLines.map((lon) => {
       const x = project(lon, 0).x;
-      return `<line x1="${x}" y1="0" x2="${x}" y2="${MAP_HEIGHT}" stroke="#C7D5E2" stroke-width="0.6"/>`;
+      return `<line x1="${x}" y1="0" x2="${x}" y2="${MAP_HEIGHT}" stroke="#A6BED4" stroke-width="0.6"/>`;
     }),
   ].join('');
 
   const landPaths = LANDMASSES.map(
     (poly) =>
-      `<path d="${polygonPath(poly)}" fill="#DED7C8" stroke="#9B907D" stroke-width="0.75" stroke-linejoin="round"/>`,
+      `<path d="${polygonPath(poly)}" fill="#F3EDE0" stroke="#7B7160" stroke-width="0.85" stroke-linejoin="round"/>`,
   ).join('');
 
   const markerElements = markers
@@ -174,13 +174,13 @@ export function renderWorldMapSvg(markers: readonly MapMarker[]): string {
       const dy = m.labelDy ?? -4;
       const anchor = m.anchor ?? 'start';
       const labelEl = m.showLabel
-        ? `<text x="${(pt.x + dx).toFixed(1)}" y="${(pt.y + dy).toFixed(1)}" text-anchor="${anchor}" font-family="Segoe UI, Arial, sans-serif" font-size="7.6" font-weight="700" fill="#182230" paint-order="stroke" stroke="#F4F1EA" stroke-width="2.4" stroke-linejoin="round">${m.label}</text>`
+        ? `<text x="${(pt.x + dx).toFixed(1)}" y="${(pt.y + dy).toFixed(1)}" text-anchor="${anchor}" font-family="Segoe UI, Arial, sans-serif" font-size="8.0" font-weight="800" fill="#0F172A" paint-order="stroke" stroke="#F8F5EE" stroke-width="2.6" stroke-linejoin="round">${m.label}</text>`
         : '';
 
       return `
         <g>
-          <circle cx="${pt.x}" cy="${pt.y}" r="5.2" fill="${color}" fill-opacity="0.22"/>
-          <circle cx="${pt.x}" cy="${pt.y}" r="2.8" fill="${color}" stroke="#FFFFFF" stroke-width="1.1"/>
+          <circle cx="${pt.x}" cy="${pt.y}" r="6.2" fill="${color}" fill-opacity="0.25"/>
+          <circle cx="${pt.x}" cy="${pt.y}" r="3.2" fill="${color}" stroke="#FFFFFF" stroke-width="1.25"/>
           ${labelEl}
         </g>`;
     })
@@ -189,8 +189,8 @@ export function renderWorldMapSvg(markers: readonly MapMarker[]): string {
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${MAP_WIDTH} ${MAP_HEIGHT}" width="${MAP_WIDTH}" height="${MAP_HEIGHT}" style="display:block;width:100%;height:auto;">
     <defs>
       <linearGradient id="oceanGrad" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0%" stop-color="#E7EFF6"/>
-        <stop offset="100%" stop-color="#DAE5F0"/>
+        <stop offset="0%" stop-color="#C9DCED"/>
+        <stop offset="100%" stop-color="#B6CDE1"/>
       </linearGradient>
     </defs>
     <rect width="${MAP_WIDTH}" height="${MAP_HEIGHT}" fill="url(#oceanGrad)"/>

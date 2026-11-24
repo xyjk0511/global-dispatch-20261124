@@ -89,7 +89,7 @@ export const EDITION_2026_11_24: EditionData = {
     kicker: 'LEAD STORY · GLOBAL MARKETS & U.S. POLITICS',
     headline: 'Asia Tech Stocks Rally on Huang’s Nvidia Return; U.S. Lawmakers Probe Deal',
     summary:
-      'Taiwan (+9.1%), South Korea’s KOSPI (+7.5%) and Japan’s Nikkei (+4.5%) surge after Nvidia reinstates CEO Jensen Huang following White House talks; bipartisan U.S. Congress committees announce national security and governance hearings.',
+      'Taiwan (+9.1%), KOSPI (+7.5%) and Nikkei (+4.5%) jump as Nvidia reinstates CEO Jensen Huang after White House talks; U.S. lawmakers announce bipartisan security and governance hearings.',
     imageFile: 'hero-markets.jpg',
     metrics: [
       { label: 'TAIEX', value: '+9.1%', direction: 'up' },
