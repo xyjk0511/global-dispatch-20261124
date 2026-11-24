@@ -1,0 +1,10 @@
+{
+  "name": "global-dispatch-20261124",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:html": "node src/build-html.ts",
+    "start": "node main.ts"
+  }
+}
