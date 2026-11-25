@@ -580,19 +580,19 @@ export function renderEditionHtml(edition: EditionData, assetsDir: string): stri
         <div class="map-canvas">${worldMapSvg}</div>
         <div class="map-kpis">
           <div class="kpi-cell">
-            <span class="kpi-kicker" style="color:#C81E1E">UK &amp; Europe</span>
-            <span class="kpi-val">Timms PIP Reset</span>
-            <span class="kpi-sub">Welfare overhaul; 4-yr profit high</span>
+            <span class="kpi-kicker" style="color:#4338CA">China · Politburo</span>
+            <span class="kpi-val">Shanghai Purge</span>
+            <span class="kpi-sub">Chen Jining under graft probe</span>
           </div>
           <div class="kpi-cell">
-            <span class="kpi-kicker" style="color:#0369A1">Americas</span>
-            <span class="kpi-val">Colombia Blast</span>
-            <span class="kpi-sub">23–25 hurt; Brazil storm hits 20k</span>
+            <span class="kpi-kicker" style="color:#0F766E">Global M&amp;A · Pharma</span>
+            <span class="kpi-val">Sanofi $41B Deal</span>
+            <span class="kpi-sub">Buys Insmed; biggest since ’23</span>
           </div>
           <div class="kpi-cell">
-            <span class="kpi-kicker" style="color:#0F766E">Africa &amp; Asia</span>
-            <span class="kpi-val">Cairo &amp; $1.62B Aid</span>
-            <span class="kpi-sub">Sisi–Sudan talks; India–Nepal pact</span>
+            <span class="kpi-kicker" style="color:#C81E1E">UN &amp; UK · Human Toll</span>
+            <span class="kpi-val">47k / 5,258 Deaths</span>
+            <span class="kpi-sub">UN femicide; UK heat record</span>
           </div>
         </div>
       </aside>

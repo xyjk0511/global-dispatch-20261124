@@ -215,14 +215,14 @@ export const EDITION_2026_11_24: EditionData = {
       countLabel: '4 STORIES',
       briefs: [
         {
-          tag: 'UK',
-          lead: 'Timms PIP Welfare Reset:',
-          body: 'Government review calls 13-yr disability benefit “unfit”; IFS flags major claimant shifts.',
+          tag: 'FR/US',
+          lead: 'Sanofi $41B Insmed Deal:',
+          body: 'France’s Sanofi buys U.S. biotech Insmed ($175/sh cash), biggest pharma M&A since 2023.',
         },
         {
-          tag: 'EU',
-          lead: '4-Yr Profit Boom:',
-          body: 'European firms pace strongest earnings season in 4 years; ECB flags sovereign debt pressure.',
+          tag: 'UK',
+          lead: '5,258 Heat Deaths & PIP:',
+          body: 'UKHSA logs record 5,258 English summer heat deaths (+76%); Timms review resets PIP benefits.',
         },
         {
           tag: 'NATO',
@@ -271,9 +271,14 @@ export const EDITION_2026_11_24: EditionData = {
       countLabel: '4 STORIES',
       briefs: [
         {
+          tag: 'SEN/MAR',
+          lead: 'Senegal AFCON Restored:',
+          body: 'CAS overturns CAF forfeit, reinstating Senegal’s 1–0 win over Morocco as 2025 champions.',
+        },
+        {
           tag: 'EGY/SDN',
           lead: 'Cairo Talks & $55M Aid:',
-          body: 'El-Sisi hosts Sudan PM Idris on Red Sea & prisoners; AfDB/UNICEF launch Port Sudan water project.',
+          body: 'El-Sisi hosts Sudan PM Idris on Red Sea & prisoners; AfDB/UNICEF launch Port Sudan water aid.',
         },
         {
           tag: 'LBY',
@@ -281,14 +286,9 @@ export const EDITION_2026_11_24: EditionData = {
           body: 'NOC reopens Sharara crude pipeline; Tripoli condemns Ukrainian sea-drone strike on Merkury.',
         },
         {
-          tag: 'NER',
-          lead: '$9.6B Niamey Forum:',
-          body: 'UNDP-backed inaugural Niger Investment Forum (N2IF) opens across 13 strategic sectors.',
-        },
-        {
-          tag: 'NGA/DRC',
-          lead: 'Oil Windfall & Mining:',
-          body: 'CREA pegs Nigeria’s energy windfall at $7.5B; DRC enforces local-share foreign mining rules.',
+          tag: 'NER/NGA',
+          lead: '$9.6B Forum & Oil:',
+          body: 'UNDP-backed Niger Investment Forum opens in Niamey; CREA pegs Nigeria oil windfall at $7.5B.',
         },
       ],
     },
@@ -298,6 +298,11 @@ export const EDITION_2026_11_24: EditionData = {
       accent: '#4338CA',
       countLabel: '4 STORIES',
       briefs: [
+        {
+          tag: 'CHN',
+          lead: 'Shanghai Politburo Purge:',
+          body: 'Shanghai Party chief Chen Jining probed for graft — 4th sitting 2022 Politburo member felled.',
+        },
         {
           tag: 'KOR',
           lead: 'Ulleung Alert & NIS:',
@@ -313,11 +318,6 @@ export const EDITION_2026_11_24: EditionData = {
           lead: 'Ransomware & Moscow:',
           body: 'Osaki Electric ransomware disrupts smart-meter supply; Tokyo visits reporter jailed in Russia.',
         },
-        {
-          tag: 'CHN',
-          lead: 'Espionage & Tariffs:',
-          body: 'Beijing reports death sentence in spy case; Asian exporters weigh looming U.S. tariff tiers.',
-        },
       ],
     },
     {
@@ -326,6 +326,11 @@ export const EDITION_2026_11_24: EditionData = {
       accent: '#047857',
       countLabel: '4 STORIES',
       briefs: [
+        {
+          tag: 'BGD',
+          lead: 'Hasina Sets Dec 16 Return:',
+          body: 'Exiled ex-PM Sheikh Hasina seeks flight home from India; Dhaka rejects terms, demands extradition.',
+        },
         {
           tag: 'IND/NPL',
           lead: '$1.62B Flood Pact:',
@@ -337,14 +342,9 @@ export const EDITION_2026_11_24: EditionData = {
           body: 'Singapore lifts 2026 GDP forecast to ~6% on AI boom; StarHub & M1 unveil all-share merger.',
         },
         {
-          tag: 'IND',
-          lead: 'Lowy Index & UNSC:',
-          body: 'India holds #3 in Lowy Asia Power Index (narrowest China gap); warns UNSC on war food shocks.',
-        },
-        {
-          tag: 'SEA',
-          lead: 'AI Water & Cloud:',
-          body: 'Analysts warn El Niño drought threatens SE Asia data centers; Noma expands SG/AU AI cloud.',
+          tag: 'IND/UN',
+          lead: 'UN Femicide & Lowy:',
+          body: 'UNODC reports 47,000 femicides (5/hr globally); India holds #3 in Lowy Asia Power Index.',
         },
       ],
     },
@@ -382,7 +382,7 @@ export const EDITION_2026_11_24: EditionData = {
     { id: 2, lon: -75.7, lat: 45.4, label: 'Ottawa', category: 'diplomacy', labelDx: -5, labelDy: -6, anchor: 'end', showLabel: false },
     { id: 3, lon: -108.5, lat: 25.5, label: 'Sinaloa', category: 'security', labelDx: -5, labelDy: 3, anchor: 'end', showLabel: true },
     { id: 4, lon: -66.1, lat: 18.5, label: 'San Juan', category: 'culture', labelDx: 5, labelDy: 2, anchor: 'start', showLabel: false },
-    { id: 5, lon: -66.9, lat: 10.5, label: 'Caracas', category: 'diplomacy', labelDx: 5, labelDy: -4, anchor: 'start', showLabel: true },
+    { id: 5, lon: -66.9, lat: 10.5, label: 'Caracas', category: 'diplomacy', labelDx: 4, labelDy: -5, anchor: 'start', showLabel: true },
     { id: 6, lon: -73.6, lat: 4.1, label: 'Villavicencio', category: 'security', labelDx: -5, labelDy: 7, anchor: 'end', showLabel: true },
     { id: 7, lon: -47.9, lat: -15.8, label: 'Brasília', category: 'diplomacy', labelDx: 5, labelDy: -2, anchor: 'start', showLabel: true },
     { id: 8, lon: -53.8, lat: -29.1, label: 'S. Brazil', category: 'climate', labelDx: 5, labelDy: 6, anchor: 'start', showLabel: false },
@@ -398,15 +398,15 @@ export const EDITION_2026_11_24: EditionData = {
     { id: 18, lon: 46.7, lat: 24.7, label: 'Riyadh', category: 'security', labelDx: -4, labelDy: 8, anchor: 'end', showLabel: false },
     { id: 19, lon: 56.3, lat: 26.6, label: 'Hormuz', category: 'security', labelDx: 3, labelDy: 10, anchor: 'start', showLabel: true },
     { id: 20, lon: 44.4, lat: 33.3, label: 'Baghdad', category: 'diplomacy', labelDx: 5, labelDy: -2, anchor: 'start', showLabel: false },
-    { id: 21, lon: 2.1, lat: 13.5, label: 'Niamey', category: 'markets', labelDx: -5, labelDy: 3, anchor: 'end', showLabel: true },
+    { id: 21, lon: -17.4, lat: 14.7, label: 'Dakar', category: 'culture', labelDx: -4, labelDy: 10, anchor: 'end', showLabel: true },
     { id: 22, lon: 37.2, lat: 19.6, label: 'Port Sudan', category: 'climate', labelDx: 5, labelDy: 6, anchor: 'start', showLabel: false },
-    { id: 23, lon: 7.5, lat: 9.1, label: 'Abuja', category: 'markets', labelDx: -5, labelDy: 6, anchor: 'end', showLabel: false },
-    { id: 24, lon: 28.8, lat: -3.5, label: 'DRC', category: 'markets', labelDx: 5, labelDy: 4, anchor: 'start', showLabel: true },
+    { id: 23, lon: 2.1, lat: 13.5, label: 'Niamey', category: 'markets', labelDx: -5, labelDy: 7, anchor: 'end', showLabel: false },
+    { id: 24, lon: 90.4, lat: 23.8, label: 'Dhaka', category: 'diplomacy', labelDx: 5, labelDy: 6, anchor: 'start', showLabel: false },
     { id: 25, lon: 77.2, lat: 28.6, label: 'New Delhi', category: 'diplomacy', labelDx: 6, labelDy: 6, anchor: 'start', showLabel: true },
     { id: 26, lon: 100.3, lat: 40.9, label: 'Jiuquan', category: 'space', labelDx: -5, labelDy: -5, anchor: 'end', showLabel: true },
-    { id: 27, lon: 127.0, lat: 37.6, label: 'Seoul', category: 'security', labelDx: -1, labelDy: -7, anchor: 'middle', showLabel: true },
+    { id: 27, lon: 121.5, lat: 31.2, label: 'Shanghai', category: 'diplomacy', labelDx: -5, labelDy: 6, anchor: 'end', showLabel: false },
     { id: 28, lon: 139.7, lat: 35.7, label: 'Tokyo', category: 'markets', labelDx: 5, labelDy: 3, anchor: 'start', showLabel: true },
-    { id: 29, lon: 121.5, lat: 25.0, label: 'Taipei', category: 'markets', labelDx: 5, labelDy: 5, anchor: 'start', showLabel: false },
+    { id: 29, lon: 127.0, lat: 37.6, label: 'Seoul', category: 'security', labelDx: -1, labelDy: -7, anchor: 'middle', showLabel: true },
     { id: 30, lon: 103.8, lat: 1.3, label: 'Singapore', category: 'markets', labelDx: -5, labelDy: 7, anchor: 'end', showLabel: true },
     { id: 31, lon: 149.1, lat: -35.3, label: 'Canberra', category: 'diplomacy', labelDx: -5, labelDy: 4, anchor: 'end', showLabel: true },
     { id: 32, lon: 174.8, lat: -36.8, label: 'Auckland', category: 'climate', labelDx: -4, labelDy: -7, anchor: 'end', showLabel: true },
