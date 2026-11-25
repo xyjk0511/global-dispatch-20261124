@@ -5,8 +5,8 @@ interface Point {
   readonly y: number;
 }
 
-const MAP_WIDTH = 440;
-const MAP_HEIGHT = 204;
+const MAP_WIDTH = 452;
+const MAP_HEIGHT = 186;
 const LON_MIN = -168;
 const LON_MAX = 186;
 const LAT_MIN = -55;

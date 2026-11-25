@@ -115,8 +115,8 @@ export function renderEditionHtml(edition: EditionData, assetsDir: string): stri
     width: 1024px;
     height: 1024px;
     overflow: hidden;
-    background: #F6F1E7;
-    color: #111827;
+    background: #F4EFE6;
+    color: #0F172A;
     font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     text-rendering: geometricPrecision;
@@ -126,25 +126,24 @@ export function renderEditionHtml(edition: EditionData, assetsDir: string): stri
     height: 1024px;
     display: flex;
     flex-direction: column;
-    background: #F6F1E7;
+    background: #F4EFE6;
   }
 
-  /* MASTHEAD (74px) */
+  /* COMMANDING MIDNIGHT-NAVY MASTHEAD (76px) */
   .masthead {
-    height: 74px;
-    padding: 7px 14px 0;
-    background: #FAF6EE;
-    border-top: 4px solid #111827;
-    border-bottom: 1.5px solid #111827;
+    height: 76px;
+    background: #0D1B2A;
+    border-bottom: 2.5px solid #C81E1E;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
   .mast-top {
+    height: 54px;
+    padding: 0 14px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 4px;
   }
   .mast-brand {
     display: flex;
@@ -155,66 +154,65 @@ export function renderEditionHtml(edition: EditionData, assetsDir: string): stri
     font-family: Georgia, "Times New Roman", serif;
     font-size: 32px;
     font-weight: 900;
-    letter-spacing: -0.6px;
-    color: #0F172A;
+    letter-spacing: -0.4px;
+    color: #FAF6EE;
     line-height: 1;
   }
   .mast-edition {
     font-size: 9.5px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    color: #64748B;
+    font-weight: 800;
+    letter-spacing: 1.1px;
+    color: #F59E0B;
     text-transform: uppercase;
   }
   .date-badge {
-    background: #B91C1C;
+    background: #C81E1E;
     color: #FFFFFF;
     font-size: 17.5px;
-    font-weight: 800;
+    font-weight: 900;
     letter-spacing: 0.75px;
     padding: 6px 15px;
     border-radius: 2px;
-    box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.22);
+    border: 1px solid rgba(250, 204, 21, 0.55);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
   }
   .mast-sub {
     height: 20px;
-    margin: 0 -14px;
     padding: 0 14px;
-    background: #EBE3D4;
-    border-top: 1px solid #D4C8B4;
+    background: #EAE2D3;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 9.1px;
-    font-weight: 700;
-    letter-spacing: 0.72px;
-    color: #1E293B;
+    font-size: 8.8px;
+    font-weight: 800;
+    letter-spacing: 0.65px;
+    color: #0F172A;
     text-transform: uppercase;
   }
 
-  /* UPPER SHOWCASE (326px) */
+  /* UPPER SHOWCASE (296px) */
   .upper-spread {
-    height: 326px;
-    padding: 9px 14px 8px;
+    height: 296px;
+    padding: 8px 14px 7px;
     display: grid;
-    grid-template-columns: 530px 454px;
-    gap: 12px;
+    grid-template-columns: 522px 464px;
+    gap: 10px;
   }
   .hero-card {
     background: #FFFDF9;
-    border: 1px solid #D5CCB9;
-    border-top: 3px solid #B91C1C;
+    border: 1px solid #CFC4B0;
+    border-top: 3px solid #C81E1E;
     display: flex;
     flex-direction: column;
     overflow: hidden;
   }
   .hero-media {
     position: relative;
-    height: 176px;
+    height: 152px;
     width: 100%;
     overflow: hidden;
     background: #1B2E4B;
-    border-bottom: 1px solid #D5CCB9;
+    border-bottom: 1px solid #CFC4B0;
   }
   .hero-media img {
     width: 100%;
@@ -225,33 +223,33 @@ export function renderEditionHtml(edition: EditionData, assetsDir: string): stri
   }
   .hero-pill {
     position: absolute;
-    top: 8px;
-    left: 8px;
-    background: rgba(185, 28, 28, 0.94);
+    top: 7px;
+    left: 7px;
+    background: rgba(200, 30, 30, 0.95);
     color: #FFFFFF;
-    font-size: 9px;
+    font-size: 8.6px;
     font-weight: 800;
-    letter-spacing: 0.8px;
-    padding: 3px 8px;
+    letter-spacing: 0.75px;
+    padding: 2.5px 8px;
     text-transform: uppercase;
   }
   .hero-content {
     flex: 1;
-    padding: 6px 11px 6px;
+    padding: 6px 10px 5px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
   .hero-headline {
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 21.2px;
-    font-weight: 800;
-    line-height: 1.11;
-    color: #0B1320;
+    font-size: 20.5px;
+    font-weight: 900;
+    line-height: 1.12;
+    color: #09111E;
     letter-spacing: -0.35px;
   }
   .hero-summary {
-    font-size: 10.6px;
+    font-size: 10.3px;
     line-height: 1.24;
     color: #1E293B;
     margin-top: 3px;
@@ -259,28 +257,28 @@ export function renderEditionHtml(edition: EditionData, assetsDir: string): stri
   .hero-metrics {
     display: flex;
     align-items: center;
-    gap: 5px;
-    margin-top: 5px;
-    padding-top: 5px;
-    border-top: 1px solid #E8E1D3;
+    gap: 4px;
+    margin-top: 4px;
+    padding-top: 4px;
+    border-top: 1px solid #E5DEC9;
   }
   .metric-pill {
-    font-size: 9.2px;
-    font-weight: 700;
-    padding: 2.5px 6px;
+    font-size: 8.7px;
+    font-weight: 800;
+    padding: 2px 5.5px;
     border-radius: 2px;
-    letter-spacing: 0.2px;
+    letter-spacing: 0.15px;
     white-space: nowrap;
   }
   .metric-up {
-    background: #E6F4F1;
+    background: #E4F4F0;
     color: #0F766E;
-    border: 1px solid #B7DFD8;
+    border: 1px solid #AEDBD2;
   }
   .metric-down {
     background: #FDECEC;
     color: #B91C1C;
-    border: 1px solid #F4C4C4;
+    border: 1px solid #F2BDBD;
   }
   .metric-neutral {
     background: #EEF2F7;
@@ -291,42 +289,42 @@ export function renderEditionHtml(edition: EditionData, assetsDir: string): stri
   /* RIGHT MAP PANEL */
   .map-panel {
     background: #FFFDF9;
-    border: 1px solid #D5CCB9;
-    border-top: 3px solid #1E3A5F;
+    border: 1px solid #CFC4B0;
+    border-top: 3px solid #0D1B2A;
     display: flex;
     flex-direction: column;
     overflow: hidden;
   }
   .map-header {
-    padding: 5px 9px 4px;
-    border-bottom: 1px solid #E5DEC9;
+    padding: 4px 8px 3px;
+    border-bottom: 1px solid #E2D9C8;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: #FBF8F1;
   }
   .map-title {
-    font-size: 10px;
-    font-weight: 800;
-    letter-spacing: 0.6px;
-    color: #1E3A5F;
+    font-size: 9.8px;
+    font-weight: 900;
+    letter-spacing: 0.55px;
+    color: #0D1B2A;
     text-transform: uppercase;
   }
   .map-subtitle {
-    font-size: 8.6px;
-    font-weight: 700;
-    color: #64748B;
+    font-size: 8.3px;
+    font-weight: 800;
+    color: #475569;
   }
   .map-legend {
-    padding: 3px 8px;
-    background: #F4EFE4;
-    border-bottom: 1px solid #E5DEC9;
+    padding: 2.5px 8px;
+    background: #F2ECE0;
+    border-bottom: 1px solid #E2D9C8;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 8.2px;
-    font-weight: 700;
-    color: #334155;
+    font-size: 7.9px;
+    font-weight: 800;
+    color: #1E293B;
   }
   .legend-item {
     display: inline-flex;
@@ -334,15 +332,15 @@ export function renderEditionHtml(edition: EditionData, assetsDir: string): stri
     gap: 3px;
   }
   .legend-dot {
-    width: 6.5px;
-    height: 6.5px;
+    width: 6px;
+    height: 6px;
     border-radius: 50%;
     display: inline-block;
   }
   .map-canvas {
-    padding: 3px 5px;
+    padding: 2px 5px;
     background: #FFFDF9;
-    border-bottom: 1px solid #E5DEC9;
+    border-bottom: 1px solid #E2D9C8;
   }
   .map-kpis {
     flex: 1;
@@ -351,8 +349,8 @@ export function renderEditionHtml(edition: EditionData, assetsDir: string): stri
     background: #FAF6EE;
   }
   .kpi-cell {
-    padding: 5px 7px;
-    border-right: 1px solid #E5DEC9;
+    padding: 3.5px 6px;
+    border-right: 1px solid #E2D9C8;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -361,44 +359,44 @@ export function renderEditionHtml(edition: EditionData, assetsDir: string): stri
     border-right: none;
   }
   .kpi-kicker {
-    font-size: 7.8px;
-    font-weight: 800;
-    letter-spacing: 0.5px;
+    font-size: 7.4px;
+    font-weight: 900;
+    letter-spacing: 0.45px;
     text-transform: uppercase;
-    margin-bottom: 1px;
+    margin-bottom: 0.5px;
   }
   .kpi-val {
-    font-size: 9.4px;
-    font-weight: 800;
-    color: #0F172A;
-    line-height: 1.15;
+    font-size: 9.1px;
+    font-weight: 900;
+    color: #09111E;
+    line-height: 1.12;
   }
   .kpi-sub {
-    font-size: 8.2px;
-    color: #475569;
-    line-height: 1.15;
+    font-size: 7.9px;
+    color: #334155;
+    line-height: 1.12;
     margin-top: 1px;
   }
 
-  /* MIDDLE 4 SPOTLIGHTS (194px) */
+  /* MIDDLE 5-CARD ILLUSTRATED SPOTLIGHT STRIP (182px) */
   .spot-strip {
-    height: 194px;
-    padding: 0 14px 8px;
+    height: 182px;
+    padding: 0 14px 7px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
   }
   .spot-card {
     background: #FFFDF9;
-    border: 1px solid #D5CCB9;
-    border-top: 3px solid #1E3A5F;
+    border: 1px solid #CFC4B0;
+    border-top: 3px solid #0D1B2A;
     display: flex;
     flex-direction: column;
     overflow: hidden;
   }
   .spot-media {
     position: relative;
-    height: 92px;
+    height: 82px;
     overflow: hidden;
     background: #1B2E4B;
     border-bottom: 1px solid #E2D9C8;
@@ -411,58 +409,58 @@ export function renderEditionHtml(edition: EditionData, assetsDir: string): stri
   }
   .spot-region {
     position: absolute;
-    bottom: 4px;
-    right: 4px;
-    background: rgba(15, 23, 42, 0.84);
-    color: #F8FAFC;
-    font-size: 7.8px;
-    font-weight: 700;
-    padding: 1.5px 5px;
+    bottom: 3px;
+    right: 3px;
+    background: rgba(13, 27, 42, 0.88);
+    color: #FAF6EE;
+    font-size: 7.3px;
+    font-weight: 800;
+    padding: 1px 4.5px;
     border-radius: 2px;
   }
   .spot-body {
     flex: 1;
-    padding: 5px 8px 6px;
+    padding: 4px 6.5px 4px;
     display: flex;
     flex-direction: column;
   }
   .spot-kicker {
-    font-size: 8px;
-    font-weight: 800;
-    letter-spacing: 0.55px;
+    font-size: 7.4px;
+    font-weight: 900;
+    letter-spacing: 0.45px;
     text-transform: uppercase;
-    margin-bottom: 2px;
+    margin-bottom: 1.5px;
   }
   .spot-title {
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 13.4px;
-    font-weight: 800;
+    font-size: 11.7px;
+    font-weight: 900;
     line-height: 1.13;
-    color: #0B1320;
-    margin-bottom: 3px;
+    color: #09111E;
+    margin-bottom: 2.5px;
   }
   .spot-summary {
-    font-size: 9.5px;
-    line-height: 1.2;
+    font-size: 8.6px;
+    line-height: 1.18;
     color: #1E293B;
   }
 
-  /* LOWER 6-CONTINENT GRID (404px) */
+  /* LOWER 8-REGION MATRIX (446px: 4 cols x 2 rows) */
   .continent-grid {
-    height: 404px;
-    padding: 0 14px 8px;
+    height: 446px;
+    padding: 0 14px 7px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 8px 10px;
+    gap: 7px 8px;
   }
   .continent-box {
     background: #FFFDF9;
-    border: 1px solid #D5CCB9;
-    border-top: 3px solid #1E3A5F;
+    border: 1px solid #CFC4B0;
+    border-top: 3px solid #0D1B2A;
     display: flex;
     flex-direction: column;
-    padding: 4px 8px 4px;
+    padding: 4px 6.5px 4px;
     overflow: hidden;
   }
   .continent-head {
@@ -471,22 +469,22 @@ export function renderEditionHtml(edition: EditionData, assetsDir: string): stri
     justify-content: space-between;
     padding-bottom: 3px;
     margin-bottom: 3px;
-    border-bottom: 1px solid #E5DEC9;
+    border-bottom: 1px solid #E2D9C8;
   }
   .continent-title {
-    font-size: 11.4px;
+    font-size: 10.2px;
     font-weight: 900;
-    letter-spacing: 0.65px;
+    letter-spacing: 0.5px;
     text-transform: uppercase;
   }
   .continent-count {
-    font-size: 7.8px;
+    font-size: 7.1px;
     font-weight: 800;
-    color: #475569;
-    background: #EFE9DC;
-    padding: 1.5px 5px;
+    color: #334155;
+    background: #ECE5D8;
+    padding: 1px 4px;
     border-radius: 2px;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.3px;
   }
   .brief-list {
     list-style: none;
@@ -496,11 +494,11 @@ export function renderEditionHtml(edition: EditionData, assetsDir: string): stri
     justify-content: space-between;
   }
   .brief-item {
-    font-size: 9.7px;
-    line-height: 1.22;
-    color: #1F2937;
-    padding-bottom: 2px;
-    border-bottom: 1px dotted #E2D9C8;
+    font-size: 8.95px;
+    line-height: 1.19;
+    color: #1E293B;
+    padding-bottom: 2.5px;
+    border-bottom: 1px dotted #DDD4C2;
   }
   .brief-item:last-child {
     border-bottom: none;
@@ -509,35 +507,35 @@ export function renderEditionHtml(edition: EditionData, assetsDir: string): stri
   .brief-tag {
     display: inline-block;
     color: #FFFFFF;
-    font-size: 7.5px;
-    font-weight: 800;
-    letter-spacing: 0.3px;
-    padding: 0.5px 4px;
+    font-size: 6.9px;
+    font-weight: 900;
+    letter-spacing: 0.25px;
+    padding: 0.5px 3.5px;
     border-radius: 2px;
-    margin-right: 3px;
+    margin-right: 2.5px;
     vertical-align: 0.5px;
   }
   .brief-lead {
     font-weight: 800;
-    color: #0F172A;
-    margin-right: 2px;
+    color: #09111E;
+    margin-right: 1.5px;
   }
   .brief-text {
-    color: #2D3748;
+    color: #243042;
   }
 
-  /* FOOTER (26px) */
+  /* FOOTER (24px) */
   .footer {
-    height: 26px;
-    background: #111827;
+    height: 24px;
+    background: #0D1B2A;
     color: #EFE9DD;
     padding: 0 14px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 8.8px;
-    font-weight: 700;
-    letter-spacing: 0.65px;
+    font-size: 8.5px;
+    font-weight: 800;
+    letter-spacing: 0.6px;
     text-transform: uppercase;
   }
   .footer-accent {
@@ -551,7 +549,7 @@ export function renderEditionHtml(edition: EditionData, assetsDir: string): stri
       <div class="mast-top">
         <div class="mast-brand">
           <h1 class="mast-title">${escapeHtml(edition.masthead)}</h1>
-          <span class="mast-edition">International Edition</span>
+          <span class="mast-edition">38 Stories · 8 Regions</span>
         </div>
         <div class="date-badge">${escapeHtml(edition.dateLabel)}</div>
       </div>
@@ -575,26 +573,26 @@ export function renderEditionHtml(edition: EditionData, assetsDir: string): stri
 
       <aside class="map-panel">
         <div class="map-header">
-          <span class="map-title">Global Event Map · 24 Nov 2026</span>
-          <span class="map-subtitle">26 Mapped Hotspots · 6 Continents</span>
+          <span class="map-title">World Event Map · 24 Nov 2026</span>
+          <span class="map-subtitle">32 Mapped Hotspots · 8 Regions</span>
         </div>
         <div class="map-legend">${legendHtml}</div>
         <div class="map-canvas">${worldMapSvg}</div>
         <div class="map-kpis">
           <div class="kpi-cell">
-            <span class="kpi-kicker" style="color:#0F766E">Energy · Gulf &amp; Libya</span>
-            <span class="kpi-val">Brent ~$90 (-3%)</span>
-            <span class="kpi-sub">Sharara reopens; Hormuz risk</span>
+            <span class="kpi-kicker" style="color:#C81E1E">UK &amp; Europe</span>
+            <span class="kpi-val">Timms PIP Reset</span>
+            <span class="kpi-sub">Welfare overhaul; 4-yr profit high</span>
           </div>
           <div class="kpi-cell">
-            <span class="kpi-kicker" style="color:#B91C1C">Med · Ukraine Strike</span>
-            <span class="kpi-val">Corvette Sunk</span>
-            <span class="kpi-sub">Merkury hit in Benghazi</span>
+            <span class="kpi-kicker" style="color:#0369A1">Americas</span>
+            <span class="kpi-val">Colombia Blast</span>
+            <span class="kpi-sub">23–25 hurt; Brazil storm hits 20k</span>
           </div>
           <div class="kpi-cell">
-            <span class="kpi-kicker" style="color:#B45309">AI &amp; Climate · U.S.</span>
-            <span class="kpi-val">400 Data Centers</span>
-            <span class="kpi-sub">Out-emit all of Denmark</span>
+            <span class="kpi-kicker" style="color:#0F766E">Africa &amp; Asia</span>
+            <span class="kpi-val">Cairo &amp; $1.62B Aid</span>
+            <span class="kpi-sub">Sisi–Sudan talks; India–Nepal pact</span>
           </div>
         </div>
       </aside>
@@ -606,8 +604,8 @@ export function renderEditionHtml(edition: EditionData, assetsDir: string): stri
 
     <footer class="footer">
       <span>${escapeHtml(edition.masthead)} · <span class="footer-accent">${escapeHtml(edition.dateLabel)}</span></span>
-      <span>6 Inhabited Continents · 30+ Verified Global Stories</span>
-      <span>One-Day World News Summary</span>
+      <span>38 Verified Full-Day Stories · 8 Global Regions · All 6 Continents</span>
+      <span>One-Day World Summary</span>
     </footer>
   </main>
 </body>
